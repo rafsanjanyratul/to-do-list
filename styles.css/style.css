@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.todo-container{
+    min-height: 50vh;
+    width: 50%;
+    background-color: #eee;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+.todo-container h1{
+    text-align: center;
+    padding-top: 10px;
+    font-family: sans-serif;
+    font-size:x-large;
+    color: gray;
+}
+.input-box{
+    display:flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.input-box input{
+    padding:20px 50px;
+    border:none;
+    outline: none;
+    background-color:#ffff;
+    border-radius: 20px 0px 0px 20px;
+}
+.input-box button{
+    border:none;
+    outline: none;
+    border-radius: 0px 20px 20px 0px;
+    padding:20px 25px;
+    background:linear-gradient(orange,red);
+    color:white;
+    cursor:pointer;
+}
+.input-box button:hover{
+    background:linear-gradient(red,orange);
+}
+.list-ul-div{
+display:flex;
+flex-direction: column;
+align-items: center;
+padding: 20px 0px;
+}
+.list-ul-div ul{
+    list-style: none;
+    
+}
+.list-ul-div ul li{
+     padding:10px 20px;
+    background-color:white;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    display:flex;
+    justify-content:space-between;
+}
+.btn{
+background-color: red;
+border:none;
+outline: none;
+border-radius: 5px;
+color:white;
+padding:5px 10px;
+cursor:pointer;
+margin-left: 20px;
+}
+li.marked{
+text-decoration: line-through;
+color: gray;
+}
+li.marked::before{
+    content:"";
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    background-image: url(/images/green_double_circle_check_mark.jpg);
+    background-size: cover;
+    background-position: center;
+}
+ @media (max-width: 600px) {
+    .todo-container {
+        width: 90%;
+    }
+
+    .input-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .input-box input,
+    .input-box button {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .list-ul-div ul li {
+        font-size: 14px;
+        padding: 10px;
+        flex-direction: row;
+    }
+}
