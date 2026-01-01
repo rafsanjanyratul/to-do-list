@@ -78,7 +78,7 @@ li.marked::before{
     height: 20px;
     width: 20px;
     margin-right: 5px;
-    background-image: url(images/green_double_circle_check_mark.jpg);
+    background-image: url("../images/green_double_circle_check_mark.jpg");
     background-size: cover;
     background-position: center;
 }
